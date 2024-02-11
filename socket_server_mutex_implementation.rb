@@ -44,7 +44,6 @@ loop do
 
   # Start a new thread to handle the client
   Thread.new do
-    # Wait until there is an available slot for a new connection
     handle_client(client)
 
     # Decrement the connection count when the client disconnects
